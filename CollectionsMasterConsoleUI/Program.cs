@@ -95,7 +95,6 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("-------------------");
 
             Console.WriteLine("All Numbers:");
-            Console.WriteLine();
             //UNCOMMENT this method to print out your numbers from arrays or lists
             Methods.NumberPrinter(myList);
             Console.WriteLine("-------------------");
@@ -119,7 +118,7 @@ namespace CollectionsMasterConsoleUI
             //TODO: Clear the list
             myList.Clear();
             Methods.NumberPrinter(myList);
-           
+            
 
 
             /// <summary>

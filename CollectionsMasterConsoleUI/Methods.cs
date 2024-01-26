@@ -20,17 +20,16 @@ namespace CollectionsMasterConsoleUI
         }
         public static void OddKiller(List<int> numberList)
         {
-            for (int i = 0; i < numberList.Count; i++)
+            for (int i = numberList.Count - 1; i >= 0; i--)
             {
-                if (i % 2 != 0)
+                if (numberList[i] % 2 != 0)
                 {
-                    numberList.Remove(i);
+                    numberList.RemoveAt(i);
                 }
-
-                NumberPrinter(numberList);
             }
+            NumberPrinter(numberList);
         }
-        public static void NumberChecker(List<int> numberList, int searchNumber)
+    public static void NumberChecker(List<int> numberList, int searchNumber)
         {
             if (numberList.Contains(searchNumber))
             {
